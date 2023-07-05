@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avançado JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo">Calculadora IMC</h1>
+    <p class="descr">Uma calculadora IMC é uma ferramenta que permite calcular o Índice de Massa Corporal (IMC) de uma pessoa com base
+        em seu peso e altura. O IMC é uma medida usada para avaliar se uma pessoa está dentro de faixas consideradas
+        saudáveis em relação ao seu peso e altura. A calculadora IMC fornece um valor numérico e uma classificação que
+        indica se a pessoa está abaixo do peso, com peso normal, acima do peso ou em uma faixa de obesidade, ajudando a
+        avaliar a saúde e o risco de certas condições associadas ao peso corporal.</p>
+    <div class="imc">
+        <div class="container">
+            <h1>Calcular IMC</h1>
+
+            <p id="muitoAbaixo">- Abaixo de 17 Muito abaixo do peso</p>
+            <p id="abaixo">- Entre 17 e 18,49 Abaixo do peso</p>
+            <p id="normal">- Entre 18,5 e 24,99 Peso normal</p>
+            <p id="acima">- Entre 25 e 29,99 Acima do peso</p>
+
+            <form id="form-calculo-imc" onsubmit="return false;">
+                <label for="peso">Peso</label><br>
+                <input type="text" placeholder="Ex: 80" id="peso"><br>
+                <label for="altura">Altura</label><br>
+                <input type="text" placeholder="Ex: 1.90" id="altura"><br><br>
+                <input type="submit" value="Calcular" id="calcular">
+                <br>
+            </form>
+            <p id="retornoErro"></p>
+        </div>
+    </div>
+    <p class="descr">Se o IMC estiver abaixo de 17, a descrição será exibida em vermelho, indicando "Muito abaixo do peso".
+        Se estiver
+        entre 17 e 18,50, a descrição será exibida em uma tonalidade de rosa, indicando "Abaixo do peso". Se estiver
+        entre 18,5 e 24,99, a descrição será exibida em verde, indicando "Peso normal". Caso contrário, se estiver acima
+        de 25, a descrição será exibida em vermelho, indicando "Acima do peso". Se os campos de peso e altura estiverem
+        vazios ou não forem preenchidos corretamente, uma mensagem de erro em vermelho será exibida.</p>
+    <script src="./index.js"></script>
+</body>
+
+</html>
